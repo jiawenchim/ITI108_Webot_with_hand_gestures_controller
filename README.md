@@ -25,7 +25,6 @@ The following options can be specified when running the demo.
 * --device<br>Specifying the camera device number (Default：0)
 * --width<br>Width at the time of camera capture (Default：960)
 * --height<br>Height at the time of camera capture (Default：540)
-* --use_static_image_mode<br>Whether to use static_image_mode option for MediaPipe inference (Default：Unspecified)
 * --min_detection_confidence<br>
 Detection confidence threshold (Default：0.5)
 * --min_tracking_confidence<br>
@@ -35,7 +34,6 @@ Tracking confidence threshold (Default：0.5)
 <pre>
 │  app.py
 │  keypoint_classification.ipynb
-│  point_history_classification.ipynb
 │  
 ├─model
 │  ├─keypoint_classifier
@@ -43,22 +41,21 @@ Tracking confidence threshold (Default：0.5)
 │  │  │  keypoint_classifier.hdf5
 │  │  │  keypoint_classifier.py
 │  │  │  keypoint_classifier.tflite
-│  │  └─ keypoint_classifier_label.csv
-│  │          
-│  └─point_history_classifier
-│      │  point_history.csv
-│      │  point_history_classifier.hdf5
-│      │  point_history_classifier.py
-│      │  point_history_classifier.tflite
-│      └─ point_history_classifier_label.csv
-│          
+│  │  └─ keypoint_classifier_label.csv        
 └─utils
     └─cvfpscalc.py
 </pre>
 ### app.py
-This is a sample program for inference.<br>
-In addition, learning data (key points) for hand sign recognition,<br>
-You can also collect training data (index finger coordinate history) for finger gesture recognition.
+Running app.py will establish connection to Webot simulation and activate live device camera. Webot robot can be controlled through hand gestures recognized by live inference of device camera video stream. 
+
+|Input:Handedness|	Input:Gesture| Output|	
+|Left|	Open|	Forward|
+Right	Open	Backward
+Left	Pointer	Turn clockwise
+Right	Pointer	Turn anticlockwise
+Left or right	Closed	Stop
+Left or right	OK	Stop
+
 
 ### keypoint_classification.ipynb
 This is a model training script for hand sign recognition.
