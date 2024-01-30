@@ -57,10 +57,10 @@ Hand sign instruction:
 * Close / OK = Stop
 
 Possible configuration options based on user preferences: 
-(i)	Speed of robot movement
+#### (i)	Speed of robot movement
 * CRUISING_SPEED (default at 1.0)
 * TURN_SPEED (default at CRUISING_SPEED/2)
-(ii)	Frame per second (in equivalent to sensitivity of live video streaming inference)
+#### (ii) Frame per second (in equivalent to sensitivity of live video streaming inference)
 * camera_sensitivity (default at 500, which is translated to 2 frames per second).
 
 
