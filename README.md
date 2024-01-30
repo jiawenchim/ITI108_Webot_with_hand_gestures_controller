@@ -56,12 +56,12 @@ Hand sign instruction:
 * Right + Pointer = Turn anticlockwise / right
 * Close / OK = Stop
 
-Configuration options based on user preferences: 
+Possible configuration options based on user preferences: 
 (i)	Speed of robot movement
-    a.	CRUISING_SPEED (default at 1.0)
-    b.	TURN_SPEED (default at CRUISING_SPEED/2)
+* CRUISING_SPEED (default at 1.0)
+* TURN_SPEED (default at CRUISING_SPEED/2)
 (ii)	Frame per second (in equivalent to sensitivity of live video streaming inference)
-    a.	camera_sensitivity (default at 500, which is translated to 2 frames per second).
+* camera_sensitivity (default at 500, which is translated to 2 frames per second).
 
 
 ### keypoint_classification.ipynb
