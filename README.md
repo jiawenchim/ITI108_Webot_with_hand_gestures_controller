@@ -3,7 +3,7 @@ The main goal of this project is to control Webot robot via hand signs using Med
 program that recognizes hand signs and finger gestures with a simple MLP using the detected key points.
 <br> ❗ Reference: [original repo](https://github.com/kinivi/hand-gesture-recognition-mediapipe).
 <br> 
-![forward.mp4](https://github.com/jiawenchim/images/blob/main/left_pointer.gif)
+![Demo](https://github.com/jiawenchim/images/blob/main/Webot%20demo.gif)
 
 This repository contains the following contents.
 * Sample program
