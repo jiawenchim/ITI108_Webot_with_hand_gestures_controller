@@ -1,9 +1,9 @@
-# hand-gesture-recognition-using-mediapipe
-Estimate hand pose using MediaPipe (Python version).<br> This is a sample 
+# webot robot controller via hand-gesture-recognition-using-mediapipe
+The main goal of this project is to control Webot robot via hand signs using MediaPipe (Python version).<br> This is a sample 
 program that recognizes hand signs and finger gestures with a simple MLP using the detected key points.
-<br> ❗ _️**This is English Translated version of the [original repo](https://github.com/Kazuhito00/hand-gesture-recognition-using-mediapipe). All Content is translated to english along with comments and notebooks**_ ❗
+<br> ❗ Reference: [original repo](https://github.com/kinivi/hand-gesture-recognition-mediapipe).
 <br> 
-![mqlrf-s6x16](https://user-images.githubusercontent.com/37477845/102222442-c452cd00-3f26-11eb-93ec-c387c98231be.gif)
+![forward.mp4](https://github.com/jiawenchim/images/blob/main/forward.mp4)
 
 This repository contains the following contents.
 * Sample program
