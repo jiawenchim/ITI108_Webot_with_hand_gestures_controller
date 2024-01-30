@@ -71,6 +71,7 @@ This is a model training script for hand gestures recognition based on input key
 This directory stores files related to hand sign recognition.<br>
 The following files are stored.
 * Training data(keypoint.csv)
+** test
 * Trained model(keypoint_classifier.tflite)
 * Label data(keypoint_classifier_label.csv)
 * Inference module(keypoint_classifier.py)
