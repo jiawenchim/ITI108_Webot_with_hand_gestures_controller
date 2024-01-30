@@ -50,10 +50,10 @@ Running app.py will establish connection to Webot simulation and activate live d
 
 Hand sign instruction:
 |Input:Handedness +	Input:Gesture = Output|	
-|Left + Open = Forward
-Right + Open = Backward
-Left  + Pointer = Turn clockwise / left
-Right + Pointer = Turn anticlockwise / right
+*Left + Open = Forward
+*Right + Open = Backward
+*Left  + Pointer = Turn clockwise / left
+*Right + Pointer = Turn anticlockwise / right
 Close / OK = Stop
 
 Configuration options based on user preferences: 
