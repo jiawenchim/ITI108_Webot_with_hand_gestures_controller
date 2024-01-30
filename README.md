@@ -1,21 +1,17 @@
 # webot robot controller via hand-gesture-recognition-using-mediapipe
-The main goal of this project is to control Webot robot via hand signs using MediaPipe (Python version).<br> This is a sample 
-program that recognizes hand signs and finger gestures with a simple MLP using the detected key points.
+The main goal of this project is to control Webot robot via hand signs using MediaPipe (Python version).<br> 
 <br> ❗ Reference: [original repo](https://github.com/kinivi/hand-gesture-recognition-mediapipe).
 <br> 
-![Demo](https://github.com/jiawenchim/images/blob/main/Webot%20demo.gif)
+![Demo](https://github.com/jiawenchim/images/blob/main/Webot%20demo%20(1).gif)
 
 This repository contains the following contents.
-* Sample program
+* Program file
 * Hand sign recognition model(TFLite)
-* Finger gesture recognition model(TFLite)
 * Learning data for hand sign recognition and notebook for learning
-* Learning data for finger gesture recognition and notebook for learning
 
 # Requirements
 * mediapipe 0.8.1
 * OpenCV 3.4.2 or Later
-* Tensorflow 2.3.0 or Later<br>tf-nightly 2.5.0.dev or later (Only when creating a TFLite for an LSTM model)
 * scikit-learn 0.23.2 or Later (Only if you want to display the confusion matrix) 
 * matplotlib 3.3.2 or Later (Only if you want to display the confusion matrix)
 
