@@ -75,7 +75,7 @@ The following files are stored.
 * Label data(keypoint_classifier_label.csv) - label data (Open, Close, Pointer, OK)
 * Inference module(keypoint_classifier.py)
 
-Hand landmark model bundle that detects the keypoint locatization of 21 hand-knuckle coordinates within the detected hand regions. According to Mediapipe documentation, the model was trained on around 30k real-wrk images, as well as several rendered synthetic hand models imposed over various backgrounds.
+Hand landmark model bundle that detects the keypoint locatization of 21 hand-knuckle coordinates within the detected hand regions. According to Mediapipe documentation, the model was trained on around 30k real-world images, as well as several rendered synthetic hand models imposed over various backgrounds.
 ![image](https://github.com/jiawenchim/ITI108_Webot_with_hand_gestures_controller/assets/142727228/2f7d4a14-bb6b-4e36-97fd-59662ef42984)
 
 
