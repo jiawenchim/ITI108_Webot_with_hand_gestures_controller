@@ -33,10 +33,12 @@ Tracking confidence threshold (Default：0.5)
 # Directory
 <pre>
 │  app.py
+│  data.py
 │  keypoint_classification.ipynb
 │  
 ├─model
 │  ├─keypoint_classifier
+│  │  │  data_collection.csv   
 │  │  │  keypoint.csv
 │  │  │  keypoint_classifier.hdf5
 │  │  │  keypoint_classifier.py
@@ -63,6 +65,8 @@ Possible configuration options based on user preferences:
 #### (ii) Frame per second (in equivalent to sensitivity of live video streaming inference)
 * camera_sensitivity (default at 500, which is translated to 2 frames per second).
 
+### data.py 
+Intended for keypoint data collection through camera. By running this file, you will first be prompted to input label class (integer), then, local camera will be activated. You can then show the hand gesture corresponding to the input label class. Keypoints data (a list of 21 pairs of numbers) will be generated and stored under model/keypoint_classifier/data_collection.csv.
 
 ### keypoint_classification.ipynb
 This is a model training script for hand gestures recognition based on input keypoint list and labels.
@@ -83,6 +87,6 @@ Hand landmark model bundle that detects the keypoint locatization of 21 hand-knu
 This is a module for FPS measurement.
 
 # Training
-Hand sign recognition and finger gesture recognition can add and change training data and retrain the model.
+Hand sign recognition and finger gesture recognition can add and change training data and retrain the model. Google Mediapipe hand landmarks library is used as feature extractor. Subsequenty, the extracted hand landmarks features will be used as input to a predictive classifier:
 ![image](https://github.com/jiawenchim/ITI108_Webot_with_hand_gestures_controller/assets/142727228/0a2591f1-885b-4f34-99eb-7f96e635836c)
 
