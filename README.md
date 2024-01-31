@@ -78,6 +78,7 @@ The following files are stored.
 * Trained model(keypoint_classifier.tflite) - trained model will be saved here.
 * Label data(keypoint_classifier_label.csv) - label data (Open, Close, Pointer, OK)
 * Inference module(keypoint_classifier.py)
+* Customized training data(data_collection.csv) - similar to Training data, but data can be collected live by running data.py file under main folder.
 
 Hand landmark model bundle that detects the keypoint locatization of 21 hand-knuckle coordinates within the detected hand regions. According to Mediapipe documentation, the model was trained on around 30k real-world images, as well as several rendered synthetic hand models imposed over various backgrounds.
 ![image](https://github.com/jiawenchim/ITI108_Webot_with_hand_gestures_controller/assets/142727228/2f7d4a14-bb6b-4e36-97fd-59662ef42984)
@@ -87,6 +88,6 @@ Hand landmark model bundle that detects the keypoint locatization of 21 hand-knu
 This is a module for FPS measurement.
 
 # Training
-Hand sign recognition and finger gesture recognition can add and change training data and retrain the model. Google Mediapipe hand landmarks library is used as feature extractor. Subsequenty, the extracted hand landmarks features will be used as input to a predictive classifier:
-![image](https://github.com/jiawenchim/ITI108_Webot_with_hand_gestures_controller/assets/142727228/0a2591f1-885b-4f34-99eb-7f96e635836c)
+Google Mediapipe hand landmarks library is used as feature extractor. Subsequenty, the extracted hand landmarks features will be used as input to a predictive classifier:
+![image](https://github.com/jiawenchim/ITI108_Webot_with_hand_gestures_controller/assets/142727228/417bbffe-f9f2-4e77-890b-7d7ee4c7b8e1)
 
