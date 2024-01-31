@@ -88,6 +88,7 @@ Hand landmark model bundle that detects the keypoint locatization of 21 hand-knu
 This is a module for FPS measurement.
 
 # Training
-Google Mediapipe hand landmarks library is used as feature extractor. Subsequenty, the extracted hand landmarks features will be used as input to a predictive classifier:
+* Keypoint data collected go through following preprocessing: Landmark coordinates -> convert to relative coordinates from ID:0 -> flatten to one-dimensional array ->  normalize to maximum value)
+* Google Mediapipe hand landmarks library is used as feature extractor. Subsequenty, the extracted hand landmarks features will be used as input to a predictive classifier made up of Dense layers.
 ![image](https://github.com/jiawenchim/ITI108_Webot_with_hand_gestures_controller/assets/142727228/417bbffe-f9f2-4e77-890b-7d7ee4c7b8e1)
 
